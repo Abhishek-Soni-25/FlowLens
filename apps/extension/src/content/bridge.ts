@@ -7,7 +7,7 @@ import {
   bridgeThemeSchema,
 } from '@flowlens/shared';
 
-const ALLOWED_ORIGIN = 'http://localhost:5173';
+const ALLOWED_ORIGIN = 'https://flowlens-bx6p.onrender.com';
 window.addEventListener('message', (event) => {
   if (event.source !== window || event.origin !== ALLOWED_ORIGIN) return;
   const projectIndex = bridgeProjectIndexSchema.safeParse(event.data);

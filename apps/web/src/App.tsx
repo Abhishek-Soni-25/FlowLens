@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Dashboard } from './pages/Dashboard';
+import { Privacy } from './pages/Privacy';
 import { WorkflowEditor } from './pages/WorkflowEditor';
 import { useUI } from './store/ui';
 import { useTheme } from './store/theme';
@@ -16,6 +17,10 @@ export function App() {
         <Route
           path="/project/:projectId"
           element={<WorkflowEditor theme={theme.theme} onToggleTheme={theme.toggleTheme} />}
+        />
+        <Route
+          path="/privacy"
+          element={<Privacy theme={theme.theme} onToggleTheme={theme.toggleTheme} />}
         />
       </Routes>
       {toast && (

@@ -179,6 +179,10 @@ export function Dashboard({ theme, onToggleTheme }: { theme: Theme; onToggleThem
           )}
         </section>
       </main>
+      <footer className="app-footer">
+        <span>FlowLens stores workflows in your browser.</span>
+        <a href="/privacy">Privacy policy</a>
+      </footer>
     </div>
   );
 }

@@ -1208,6 +1208,113 @@ a {
   background: #020711e8;
 }
 
+.privacy-page {
+  min-height: 100vh;
+}
+.privacy-main {
+  width: min(860px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 42px 0 72px;
+}
+.privacy-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 18px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+.privacy-back:hover,
+.app-footer a:hover {
+  color: var(--brand);
+}
+.privacy-card {
+  padding: clamp(28px, 5vw, 56px);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--surface);
+  box-shadow: 0 18px 60px #1118270d;
+}
+.privacy-card h1 {
+  margin: 10px 0 4px;
+  color: var(--text);
+  font-size: clamp(34px, 6vw, 50px);
+  letter-spacing: -0.045em;
+}
+.privacy-card h2 {
+  margin: 34px 0 10px;
+  color: var(--text);
+  font-size: 19px;
+}
+.privacy-card p,
+.privacy-card li,
+.privacy-card dd {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.75;
+}
+.privacy-card p {
+  margin: 10px 0;
+}
+.privacy-card ul {
+  padding-left: 22px;
+}
+.privacy-card li + li {
+  margin-top: 7px;
+}
+.privacy-card strong,
+.privacy-card code {
+  color: var(--text);
+}
+.privacy-card code {
+  padding: 2px 5px;
+  border-radius: 5px;
+  background: var(--surface-soft);
+}
+.privacy-updated {
+  margin-bottom: 28px !important;
+  font-size: 13px !important;
+}
+.privacy-permissions {
+  display: grid;
+  gap: 10px;
+  margin: 16px 0 0;
+}
+.privacy-permissions div {
+  display: grid;
+  grid-template-columns: 145px 1fr;
+  gap: 18px;
+  padding: 13px 15px;
+  border-radius: 10px;
+  background: var(--surface-soft);
+}
+.privacy-permissions dt {
+  color: var(--text);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 13px;
+  font-weight: 700;
+}
+.privacy-permissions dd {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
+}
+.app-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  width: min(1180px, calc(100% - 80px));
+  margin: 0 auto;
+  padding: 0 0 32px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.app-footer a {
+  color: var(--text);
+  font-weight: 700;
+}
+
 @media (max-width: 800px) {
   .app-header {
     height: 58px;
@@ -1222,6 +1329,9 @@ a {
   .dashboard-main {
     width: min(100% - 28px, 620px);
     padding: 24px 0 40px;
+  }
+  .app-footer {
+    width: min(100% - 28px, 620px);
   }
   .hero {
     padding: 28px 22px;
@@ -1295,6 +1405,14 @@ a {
   .annotation-toolbar button span {
     display: none;
   }
+  .privacy-main {
+    width: min(100% - 28px, 620px);
+    padding: 24px 0 48px;
+  }
+  .privacy-permissions div {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
 }
 
 @media (max-width: 440px) {
@@ -1314,5 +1432,9 @@ a {
   .empty-state {
     padding: 28px 18px;
     text-align: center;
+  }
+  .app-footer {
+    flex-direction: column;
+    gap: 8px;
   }
 }

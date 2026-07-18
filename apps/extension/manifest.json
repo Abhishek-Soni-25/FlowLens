@@ -10,7 +10,7 @@
     "128": "icons/icon128.png"
   },
   "permissions": ["activeTab", "tabs", "storage", "unlimitedStorage", "scripting"],
-  "host_permissions": ["http://localhost:5173/*"],
+  "host_permissions": ["https://flowlens-bx6p.onrender.com/*"],
   "background": { "service_worker": "src/background/index.ts", "type": "module" },
   "action": {
     "default_popup": "src/popup/index.html",
@@ -28,7 +28,7 @@
       "run_at": "document_start"
     },
     {
-      "matches": ["http://localhost:5173/*"],
+      "matches": ["https://flowlens-bx6p.onrender.com/*"],
       "js": ["src/content/bridge.ts"],
       "run_at": "document_start"
     }
