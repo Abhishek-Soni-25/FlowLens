@@ -1,0 +1,73 @@
+{
+  "version": "1.0",
+  "project": {
+    "id": "mock-checkout",
+    "name": "Mock checkout flow",
+    "domain": "shop.example",
+    "createdAt": "2026-07-18T10:00:00.000Z",
+    "updatedAt": "2026-07-18T10:02:00.000Z"
+  },
+  "sessions": [
+    {
+      "id": "mock-session",
+      "projectId": "mock-checkout",
+      "name": "Happy path",
+      "startedAt": "2026-07-18T10:00:00.000Z",
+      "endedAt": "2026-07-18T10:02:00.000Z",
+      "autoCapture": true,
+      "status": "completed"
+    }
+  ],
+  "screens": [
+    {
+      "id": "mock-home",
+      "projectId": "mock-checkout",
+      "sessionId": "mock-session",
+      "url": "https://shop.example/",
+      "normalizedUrl": "https://shop.example/",
+      "title": "Store home",
+      "screenshotDataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=",
+      "screenshotHash": "home",
+      "viewportWidth": 1280,
+      "viewportHeight": 720,
+      "capturedAt": "2026-07-18T10:00:00.000Z",
+      "captureType": "initial"
+    },
+    {
+      "id": "mock-cart",
+      "projectId": "mock-checkout",
+      "sessionId": "mock-session",
+      "url": "https://shop.example/cart",
+      "normalizedUrl": "https://shop.example/cart",
+      "title": "Shopping cart",
+      "screenshotDataUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=",
+      "screenshotHash": "cart",
+      "viewportWidth": 1280,
+      "viewportHeight": 720,
+      "capturedAt": "2026-07-18T10:01:00.000Z",
+      "captureType": "automatic",
+      "sourceScreenId": "mock-home",
+      "navigationAction": "View cart"
+    }
+  ],
+  "connections": [
+    {
+      "id": "mock-edge",
+      "projectId": "mock-checkout",
+      "sessionId": "mock-session",
+      "sourceScreenId": "mock-home",
+      "targetScreenId": "mock-cart",
+      "label": "View cart",
+      "actionType": "click",
+      "createdAt": "2026-07-18T10:01:00.000Z"
+    }
+  ],
+  "comments": [],
+  "annotations": [],
+  "canvas": {
+    "projectId": "mock-checkout",
+    "nodePositions": {},
+    "updatedAt": "2026-07-18T10:02:00.000Z"
+  },
+  "exportedAt": "2026-07-18T10:02:00.000Z"
+}

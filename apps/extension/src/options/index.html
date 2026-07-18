@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>FlowLens settings</title>
+  </head>
+  <body>
+    <main>
+      <img class="logo" src="/icons/flowlens-icon.png" alt="" />
+      <h1>Flow<span>Lens</span> settings</h1>
+      <p>Configure where completed recordings open.</p>
+      <form>
+        <label
+          >Workflow editor URL<input
+            id="editor-url"
+            type="url"
+            required
+            placeholder="http://localhost:5173" /></label
+        ><button type="submit">Save settings</button><span id="status" role="status"></span>
+      </form>
+      <section>
+        <h2>Privacy</h2>
+        <p>
+          FlowLens stores screenshots and workflow data locally. It does not send analytics or
+          project data to external services.
+        </p>
+      </section>
+    </main>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
