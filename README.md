@@ -16,7 +16,44 @@ FlowLens is a local-first Chrome extension and workflow whiteboard for recording
 
 ## Screenshots
 
-> Add product screenshots here after loading the extension in Chrome. Suggested captures: extension recording state, project dashboard, workflow editor, and annotation modal.
+### Start a Website Recording
+
+Open FlowLens on any website, enter a project name, and start recording the website journey. FlowLens captures the current screen and tracks navigation while keeping recorded data inside the browser.
+
+![FlowLens Start Recording](./docs/images/extension-start-recording.png)
+
+---
+
+### Active Recording
+
+While recording is active, FlowLens displays the current project, number of captured screens, and the most recently captured page. The recording can be stopped directly from the extension popup.
+
+![FlowLens Active Recording](./docs/images/extension-recording-active.png)
+
+---
+
+### Homepage
+
+The landing page where users can create or open FlowLens projects and manage previous recording sessions.
+
+![Homepage](./docs/images/homepage.png)
+
+---
+
+### Workflow Editor
+
+Automatically generated website workflow displayed as an interactive React Flow canvas. Users can drag screens, edit connections, zoom, pan, and reorganize the navigation graph.
+
+![Workflow Editor](./docs/images/workflow-editor.png)
+
+---
+
+### Annotation Workspace
+
+Annotate screenshots with freehand drawings, arrows, comments, and text to communicate UI changes with developers and stakeholders.
+
+![Annotation Workspace](./docs/images/annotation-workspace.png)
+
 
 ## Technology
 
